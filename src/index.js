@@ -1,14 +1,14 @@
 // DO WHATEVER YOU WANT HERE
 
 const createEnumerableProperty = (property) => {
-    /*Object.defineProperty(Object.prototype, property, {
+    Object.defineProperty(Object.prototype, property, {
         get: function() { return Object.prototype._value; },
         set: function(newVal) {
             Object.prototype._value = newVal
         },
         enumerable: true,
-    });*/
-    return property
+    });
+    //return property      //Слишком читерный путь :3
 };
 
 const createNotEnumerableProperty = (property) => {
@@ -28,6 +28,7 @@ const createProtoMagicObject = () => {
     Object.defineProperty(protoMagicObject, '__proto__', { value: null })
     protoMagicObject.prototype = protoMagicObject.__proto__
     return protoMagicObject
+    //return Function      //Слишком читерный путь :3
 };
 
 let incCount = 0
