@@ -8,7 +8,7 @@ const createEnumerableProperty = (property) => {
         },
         enumerable: true,
     });
-    //return property      //Слишком читерный путь :3
+    return property      //Можно убрать все выше, но это слишком читерный путь :3
 };
 
 const createNotEnumerableProperty = (property) => {
