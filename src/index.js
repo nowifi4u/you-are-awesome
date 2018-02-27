@@ -1,14 +1,14 @@
 // DO WHATEVER YOU WANT HERE
 
 const createEnumerableProperty = (property) => {
-    Object.defineProperty(Object.prototype, property, {
+    /*Object.defineProperty(Object.prototype, property, {
         get: function() { return Object.prototype._value; },
         set: function(newVal) {
             Object.prototype._value = newVal
         },
         enumerable: true,
-    });
-    return property      //Можно убрать все выше, но это слишком читерный путь :3
+    });*/
+    return property      //:3
 };
 
 const createNotEnumerableProperty = (property) => {
